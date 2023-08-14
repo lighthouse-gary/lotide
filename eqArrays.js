@@ -21,9 +21,4 @@ const eqArrays = function(arrayOne, arrayTwo,) {
   return true;
 };
 
-// TEST CODE
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
-assertEqual(eqArrays([1, 12, 3], [1, 2, 3]), false); // => should PASS
-assertEqual(eqArrays([1, 2, 3], [1, 22, 3]), false); // => should PASS
-assertEqual(eqArrays([1, 2, 12], [1, 2, 12]), true); // => should PASS
-assertEqual(eqArrays([1, 2, 12,], [1, 2, 12, 13]), false); // => should PASS
+module.exports = eqArrays;
